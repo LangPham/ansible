@@ -1,0 +1,20 @@
+---
+#
+- hosts: virtualbox
+  remote_user: ansible
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Install nginx
+      dnf:
+        name: nginx
+        state: latest
+    - name: Restart servie nginx
+      systemd:
+        state: restarted
+        daemon_reload: yes
+        name: nginx
+    - name: enable service nginx
+      systemd:
+        name: nginx
+        enabled: yes
