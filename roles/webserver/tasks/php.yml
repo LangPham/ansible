@@ -1,0 +1,32 @@
+---
+- name: install php
+  dnf:
+    name: '@php:7.2/common'
+    state: present
+
+- name: copy www.conf
+  copy:
+    src:  www.conf
+    dest: /etc/php-fpm.d/www.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: restart service php-fpm
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: php-fpm
+
+- name: enable service php-fpm
+  systemd:
+    name: php-fpm
+    enabled: yes
+
+- name: copy info
+  template:
+    src:  info.php.j2
+    dest: /usr/share/nginx/html/info.php
+    owner: root
+    group: root
+    mode: 0644

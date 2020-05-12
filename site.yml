@@ -1,0 +1,9 @@
+---
+- name: apply the webserver
+  hosts: virtualbox
+  remote_user: ansible
+  become: yes
+  become_method: sudo
+
+  roles:
+  - webserver

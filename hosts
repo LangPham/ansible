@@ -1,0 +1,3 @@
+[virtualbox]
+c81 ansible_ssh_host=c101
+c82 ansible_ssh_host=c102

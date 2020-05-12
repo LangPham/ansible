@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2440b451-4936-43b1-95a0-800c03a66603" name="Default Changelist" comment="" />
+    <list default="true" id="2440b451-4936-43b1-95a0-800c03a66603" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-cen8.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbox/firewald.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbox/mariadb-cen8.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbox/nginx-cen8.yml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +21,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aw3bzHwPMt7kQEfjBVrU8Z3Nzr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,10 +33,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/virtualbox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/roles/webserver/tasks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,11 +51,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/roles/webserver/files" />
+      <recent name="$PROJECT_DIR$/backup" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/virtualbox" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/virtualbox" />
+      <recent name="$PROJECT_DIR$/roles/webserver/tasks" />
+      <recent name="$PROJECT_DIR$/group_vars" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/roles" />
+      <recent name="$PROJECT_DIR$/virtualbox" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -56,7 +76,7 @@
       <updated>1587632903815</updated>
       <workItem from="1587632905769" duration="204000" />
       <workItem from="1587633137367" duration="3188000" />
-      <workItem from="1589171515843" duration="4082000" />
+      <workItem from="1589171515843" duration="17366000" />
     </task>
     <servers />
   </component>
@@ -68,6 +88,20 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="560" y="177" key="#Project_Structure/0.23.1920.977@0.23.1920.977" timestamp="1587632909846" />
+    <state x="826" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589275849742">
+      <screen x="0" y="23" width="1920" height="984" />
+    </state>
+    <state x="826" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.982@0.23.1920.982" timestamp="1589271132244" />
+    <state x="826" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.984@0.23.1920.984" timestamp="1589275849742" />
+    <state x="943" y="412" key="Github.ShareDialog" timestamp="1589194488669">
+      <screen x="0" y="23" width="1920" height="978" />
+    </state>
+    <state x="943" y="412" key="Github.ShareDialog/0.23.1920.978@0.23.1920.978" timestamp="1589194488669" />
+    <state x="1287" y="443" key="NewPhpFileDialog" timestamp="1589277774561">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="1287" y="442" key="NewPhpFileDialog/0.23.1920.980@0.23.1920.980" timestamp="1589252067436" />
+    <state x="1287" y="443" key="NewPhpFileDialog/0.23.1920.982@0.23.1920.982" timestamp="1589277774561" />
     <state x="765" y="150" key="SettingsEditor" timestamp="1587633106912">
       <screen x="0" y="23" width="1920" height="977" />
     </state>

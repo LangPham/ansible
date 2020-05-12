@@ -1,0 +1,5 @@
+---
+- include: firewalld.yml
+- include: nginx.yml
+- include: mariadb.yml
+- include: php.yml

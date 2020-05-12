@@ -1,0 +1,23 @@
+---
+- name: Install mariadb
+  dnf:
+    name:
+    - mariadb-server
+    - python3-PyMySQL
+    state: latest
+
+- name: Restart service mariadb
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: mariadb
+
+- name: update mysql root password for all root accounts
+  mysql_user:
+    name: root
+    host: localhost
+    password: '{{ mariadb_root_password }}'
+    login_user: root
+    login_password: '{{ mariadb_root_password_old }}'
+    check_implicit_admin: yes
+    state: present

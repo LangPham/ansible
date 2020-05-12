@@ -1,0 +1,17 @@
+---
+- name: install nginx
+  dnf:
+    name: nginx
+    state: latest
+
+- name: restart service nginx
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: nginx
+
+- name: enable service nginx
+  systemd:
+    name: nginx
+    enabled: yes
+
