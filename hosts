@@ -1,3 +1,7 @@
 [virtualbox]
 c81 ansible_ssh_host=c101
 c82 ansible_ssh_host=c102
+[database]
+d32 ansible_ssh_host=d32
+d34 ansible_ssh_host=d34
+[loadbalance]

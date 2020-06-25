@@ -1,0 +1,6 @@
+---
+- name: Add service mysql to firewalld
+  firewalld:
+    zone: public
+    state: enabled
+    service: mysql

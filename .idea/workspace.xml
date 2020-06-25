@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2440b451-4936-43b1-95a0-800c03a66603" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-cen8.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbox/firewald.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbox/mariadb-cen8.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbox/nginx-cen8.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group_vars/virtualbox.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/virtualbox.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/webserver/tasks/firewalld.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/webserver/tasks/firewalld.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/webserver/templates/info.php.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/webserver/templates/info.php.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/site.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +24,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -37,13 +32,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/roles/webserver/tasks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/roles/database/tasks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -57,11 +53,11 @@
       <recent name="$PROJECT_DIR$/virtualbox" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/roles/database/tasks" />
+      <recent name="$PROJECT_DIR$/roles" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/roles/webserver/tasks" />
       <recent name="$PROJECT_DIR$/group_vars" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/roles" />
-      <recent name="$PROJECT_DIR$/virtualbox" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -76,12 +72,16 @@
       <updated>1587632903815</updated>
       <workItem from="1587632905769" duration="204000" />
       <workItem from="1587633137367" duration="3188000" />
-      <workItem from="1589171515843" duration="17366000" />
+      <workItem from="1589171515843" duration="19310000" />
+      <workItem from="1589425587888" duration="51000" />
+      <workItem from="1592970381085" duration="801000" />
+      <workItem from="1593056132485" duration="97000" />
+      <workItem from="1593056303204" duration="7783000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="560" y="177" key="#Project_Structure" timestamp="1587632909846">
@@ -102,14 +102,20 @@
     </state>
     <state x="1287" y="442" key="NewPhpFileDialog/0.23.1920.980@0.23.1920.980" timestamp="1589252067436" />
     <state x="1287" y="443" key="NewPhpFileDialog/0.23.1920.982@0.23.1920.982" timestamp="1589277774561" />
-    <state x="765" y="150" key="SettingsEditor" timestamp="1587633106912">
-      <screen x="0" y="23" width="1920" height="977" />
+    <state x="765" y="151" key="SettingsEditor" timestamp="1589425636801">
+      <screen x="0" y="23" width="1920" height="984" />
     </state>
     <state x="765" y="150" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1587633106912" />
-    <state x="1032" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589171515817">
-      <screen x="0" y="23" width="1920" height="977" />
+    <state x="765" y="151" key="SettingsEditor/0.23.1920.984@0.23.1920.984" timestamp="1589425636801" />
+    <state x="842" y="251" key="Vcs.Push.Dialog.v2" timestamp="1589280532226">
+      <screen x="0" y="23" width="1920" height="978" />
+    </state>
+    <state x="842" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.978@0.23.1920.978" timestamp="1589280532226" />
+    <state x="1032" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1589425588532">
+      <screen x="0" y="23" width="1920" height="984" />
     </state>
     <state x="1032" y="344" key="com.intellij.ide.util.TipDialog/0.23.1920.977@0.23.1920.977" timestamp="1589171515817" />
+    <state x="1032" y="346" key="com.intellij.ide.util.TipDialog/0.23.1920.984@0.23.1920.984" timestamp="1589425588532" />
     <state x="768" y="134" key="new project wizard" timestamp="1589181454231">
       <screen x="0" y="23" width="1920" height="978" />
     </state>

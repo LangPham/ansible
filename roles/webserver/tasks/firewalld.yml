@@ -13,24 +13,6 @@
     state: enabled
     service: https
 
-- name: Add service http
-  firewalld:
-    zone: public
-    state: enabled
-    service: http
-
-- name: Add service https
-  firewalld:
-    zone: public
-    state: enabled
-    service: https
-
-- name: Add service http
-  firewalld:
-    zone: public
-    state: enabled
-    service: http
-
 - name: Add service myslq
   firewalld:
     zone: public

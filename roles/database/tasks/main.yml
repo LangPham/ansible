@@ -1,0 +1,6 @@
+---
+- include: update.yml
+- include: firewalld.yml
+- include: mysql.yml
+#- include: nginx.yml
+#- include: php.yml
