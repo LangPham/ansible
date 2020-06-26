@@ -4,6 +4,8 @@
   remote_user: ansible
   become: yes
   become_method: sudo
+  vars:
+    dbmaster: "dbmaster"
 
   roles:
   - database

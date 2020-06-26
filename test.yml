@@ -1,0 +1,24 @@
+---
+- name: apply the webserver
+  hosts: virtualbox
+  vars:
+    hostname_short: "{{ inventory_hostname_short }}"
+  remote_user: ansible
+  become: yes
+  become_method: sudo
+
+  tasks:
+    # Get master binlog file name and binlog position
+    - mysql_replication:
+        login_user: root
+        login_password: password
+        login_unix_socket: /var/lib/mysql/mysql.sock
+#        master_ssl: 1
+#        ssl_ca: /var/lib/mysql/ca.pem
+#        ssl_cert: /var/lib/mysql/client-cert.pem
+#        ssl_key: /var/lib/mysql/client-key.pem
+        mode: getmaster
+    register: find_output
+#        when: ansible_facts.hostname == "cen101"
+#    -  debug:
+#        var: find_output

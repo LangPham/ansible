@@ -5,8 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group_vars/virtualbox.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/virtualbox.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/webserver/tasks/firewalld.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/webserver/tasks/firewalld.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/webserver/templates/info.php.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/webserver/templates/info.php.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/database/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/database/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/database/tasks/mysql.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/database/tasks/mysql.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/site.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,9 +54,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/roles/database/tasks" />
-      <recent name="$PROJECT_DIR$/roles" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/roles/webserver/tasks" />
+      <recent name="$PROJECT_DIR$/roles/database/files" />
+      <recent name="$PROJECT_DIR$/roles" />
       <recent name="$PROJECT_DIR$/group_vars" />
     </key>
   </component>
@@ -76,7 +76,7 @@
       <workItem from="1589425587888" duration="51000" />
       <workItem from="1592970381085" duration="801000" />
       <workItem from="1593056132485" duration="97000" />
-      <workItem from="1593056303204" duration="7783000" />
+      <workItem from="1593056303204" duration="30449000" />
     </task>
     <servers />
   </component>
@@ -88,9 +88,10 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="560" y="177" key="#Project_Structure/0.23.1920.977@0.23.1920.977" timestamp="1587632909846" />
-    <state x="826" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589275849742">
-      <screen x="0" y="23" width="1920" height="984" />
+    <state x="826" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593083954818">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state x="826" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.977@0.23.1920.977" timestamp="1593083954818" />
     <state x="826" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.982@0.23.1920.982" timestamp="1589271132244" />
     <state x="826" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.984@0.23.1920.984" timestamp="1589275849742" />
     <state x="943" y="412" key="Github.ShareDialog" timestamp="1589194488669">
@@ -107,9 +108,10 @@
     </state>
     <state x="765" y="150" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1587633106912" />
     <state x="765" y="151" key="SettingsEditor/0.23.1920.984@0.23.1920.984" timestamp="1589425636801" />
-    <state x="842" y="251" key="Vcs.Push.Dialog.v2" timestamp="1589280532226">
-      <screen x="0" y="23" width="1920" height="978" />
+    <state x="842" y="251" key="Vcs.Push.Dialog.v2" timestamp="1593076346457">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state x="842" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1593076346457" />
     <state x="842" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.978@0.23.1920.978" timestamp="1589280532226" />
     <state x="1032" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1589425588532">
       <screen x="0" y="23" width="1920" height="984" />

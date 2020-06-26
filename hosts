@@ -1,6 +1,12 @@
-[virtualbox]
+[dbmaster]
 c81 ansible_ssh_host=c101
+[dbslaver]
 c82 ansible_ssh_host=c102
+
+[virtualbox:children]
+dbmaster
+dbslaver
+
 [database]
 d32 ansible_ssh_host=d32
 d34 ansible_ssh_host=d34

@@ -1,0 +1,49 @@
+---
+#- name: copy mysql-server.cnf DB-Master
+#  copy:
+#    src:  Master-mysql-server.cnf
+#    dest: /etc/my.cnf.d/mysql-server.cnf
+#    owner: root
+#    group: root
+#    mode: 0644
+#
+#- name: Get file from DB-Master to local
+#  fetch:
+#    src: "/var/lib/mysql/{{ item }}"
+#    dest: "{{ role_path }}/files/master/"
+#    flat: yes
+#  with_items:
+#    - ca.pem
+#    - client-key.pem
+#    - client-cert.pem
+
+#- name: Get master
+#  mysql_replication:
+#    login_user: root
+#    login_password: password
+#    login_unix_socket: /var/lib/mysql/mysql.sock
+#    mode: getmaster
+#  register: find_output
+
+# Example setting facts so that they will be persisted in the fact cache
+#- set_fact:
+#    dbmaster: "{{ find_output }}"
+#- name: debug master
+#  debug:
+#    var: find_output
+#- name: Removes all anonymous user accounts
+#  mysql_user:
+#    name: ''
+#    host_all: yes
+#    state: absent
+#
+#- name: Create database user with name 'bob' and password '12345' with all database privileges
+#  mysql_user:
+#    login_user: root
+#    login_password: password
+#    login_unix_socket: /var/lib/mysql/mysql.sock
+#    name: replica
+#    password: reppassword
+#    host: "%"
+#    priv: '*.*:REPLICATION SLAVE'
+#    state: present

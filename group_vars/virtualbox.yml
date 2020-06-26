@@ -1,3 +1,4 @@
 ---
-mariadb_root_password: password
-mariadb_root_password_old: ""
+mysql_root_password: password
+mysql_root_password_old: ''
+host_DB_master: centos101

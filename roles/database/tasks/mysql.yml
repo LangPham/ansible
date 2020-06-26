@@ -1,35 +1,34 @@
 ---
-- name: Remove mariadb
-  dnf:
-    name:
-    - mariadb
-    state: absent
+#- name: Remove mariadb
+#  dnf:
+#    name:
+#      - mariadb
+#    state: absent
+#
+#- name: Install mysql
+#  dnf:
+#    name:
+#      - '@mysql:8.0'
+#      - python3-PyMySQL
+#    state: present
+#
+#- name: Restart service mysqld
+#  systemd:
+#    state: restarted
+#    daemon_reload: yes
+#    name: mysqld
+#
+#- name: Update mysql root password for all root accounts
+#  mysql_user:
+#    name: root
+#    password: '{{ mysql_root_password }}'
+#    check_implicit_admin: yes
+#    state: present
 
-- name: Install mysql
-  dnf:
-    name:
-    - '@mysql:8.0'
-    - python3-PyMySQL
-    state: present
+- name: config DB-Master
+  import_tasks: master.yml
+  when: ansible_facts.hostname == "cen101"
 
-- name: Removes all anonymous user accounts
-  mysql_user:
-    name: ''
-    host_all: yes
-    state: absent
-
-- name: Restart service mysqld
-  systemd:
-    state: restarted
-    daemon_reload: yes
-    name: mysqld
-
-- name: Update mysql root password for all root accounts
-  mysql_user:
-    name: root
-    host: localhost
-    password: '{{ mariadb_root_password }}'
-    login_user: root
-    login_password: '{{ mariadb_root_password_old }}'
-    check_implicit_admin: yes
-    state: present
+- name: config DB-Slaver
+  import_tasks: slaver.yml
+  when: ansible_facts.hostname == "cen102"
